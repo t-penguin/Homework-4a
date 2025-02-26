@@ -6,12 +6,8 @@
     public Deck()
     {
         foreach (Suit suit in Enum.GetValues(typeof(Suit)))
-        {
             foreach (Rank rank in Enum.GetValues(typeof(Rank)))
-            {
-                //create a new card and add it to the deck
-            }
-        }
+                cards.Add(new Card(rank, suit));
     }
 
     //Implement a property to get Cards
