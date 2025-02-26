@@ -20,9 +20,8 @@
         if (_cards.Count == 0)
             return null;
         
-        int lastIndex = _cards.Count - 1;
-        Card topCard = _cards[lastIndex];
-        _cards.RemoveAt(lastIndex);
+        Card topCard = _cards.First();
+        _cards.RemoveAt(0);
         return topCard;
     }
 
@@ -39,7 +38,7 @@
         }
     }
 
-    //Cut method
+    // Cuts the deck at the spe
     public void Cut(int index)
     {
         //implementation
