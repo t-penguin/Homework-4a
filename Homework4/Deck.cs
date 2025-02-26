@@ -1,17 +1,18 @@
 ﻿public class Deck
 {
-    List<Card> cards = new List<Card>();
+    // Fields
+    List<Card> _cards = new List<Card>();
 
-    //Deck Constructor
+    // Deck Constructor
     public Deck()
     {
         foreach (Suit suit in Enum.GetValues(typeof(Suit)))
             foreach (Rank rank in Enum.GetValues(typeof(Rank)))
-                cards.Add(new Card(rank, suit));
+                _cards.Add(new Card(rank, suit));
     }
 
-    //Implement a property to get Cards
-    
+    // Properties
+    List<Card> Cards { get { return _cards; } }
 
     //Takes top card from deck (if deck is not empty, otherwise return null)
     public Card TakeTopCard()
