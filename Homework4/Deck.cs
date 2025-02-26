@@ -14,10 +14,16 @@
     // Properties
     List<Card> Cards { get { return _cards; } }
 
-    //Takes top card from deck (if deck is not empty, otherwise return null)
+    // Takes top card from deck (if deck is not empty, otherwise return null)
     public Card TakeTopCard()
     {
-        //implementation
+        if (_cards.Count == 0)
+            return null;
+        
+        int lastIndex = _cards.Count - 1;
+        Card topCard = _cards[lastIndex];
+        _cards.RemoveAt(lastIndex);
+        return topCard;
     }
 
     //Shuffle Method
