@@ -26,10 +26,17 @@
         return topCard;
     }
 
-    //Shuffle Method
+    // Shuffles the deck
     public void Shuffle()
     {
-        //implementation
+        Random rand = new Random();
+        for (int i = 0; i < Cards.Count; i++)
+        {
+            int r = rand.Next(i, Cards.Count);
+            Card temp = Cards[i];
+            Cards[i] = Cards[r];
+            Cards[r] = temp;
+        }
     }
 
     //Cut method
