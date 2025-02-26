@@ -7,7 +7,12 @@
     private bool _faceUp;
 
     //Card Constructor
-    
+    public Card(Rank rank, Suit suit)
+    {
+        _rank = rank;
+        _suit = suit;
+        _faceUp = false;
+    }
 
     //Define properties for all above fields
     //code example: public Suit Suit { get { return suit; } }
