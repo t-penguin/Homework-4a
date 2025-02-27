@@ -26,6 +26,14 @@ deck.Shuffle();
 Console.WriteLine("Shuffled the deck:");
 PrintDeck(deck);
 
+Console.WriteLine();
+
+// Test taking the top card of a deck
+card = deck.TakeTopCard();
+Console.WriteLine($"Took the top card of the deck: {card.Rank} of {card.Suit}");
+Console.WriteLine("The remainder of the deck is:");
+PrintDeck(deck);
+
 
 // Prints the deck from top to bottom
 void PrintDeck(Deck d)
