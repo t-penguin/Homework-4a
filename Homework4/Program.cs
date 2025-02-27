@@ -7,6 +7,11 @@ Console.WriteLine();
 
 Deck deck = new Deck();
 Console.WriteLine("Created new deck: ");
-foreach (Card c in deck.Cards)
-    Console.Write($"{c.Rank} of {c.Suit}, ");
-Console.WriteLine();
+PrintDeck(deck);
+
+void PrintDeck(Deck d)
+{
+    foreach (Card c in d.Cards)
+        Console.Write($"{c.Rank} of {c.Suit} | ");
+    Console.WriteLine();
+}
