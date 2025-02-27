@@ -6,7 +6,13 @@ Console.WriteLine($"Flipped card over. Face Up: {card.FaceUp}");
 Console.WriteLine();
 
 Deck deck = new Deck();
-Console.WriteLine("Created new deck: ");
+Console.WriteLine("Created new deck:");
+PrintDeck(deck);
+
+Console.WriteLine();
+
+deck.Shuffle();
+Console.WriteLine("Shuffled the deck:");
 PrintDeck(deck);
 
 void PrintDeck(Deck d)
