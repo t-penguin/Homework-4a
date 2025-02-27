@@ -12,7 +12,7 @@
     }
 
     // Properties
-    List<Card> Cards { get { return _cards; } }
+    public List<Card> Cards { get { return _cards; } }
 
     // Takes top card from deck (if deck is not empty, otherwise return null)
     public Card TakeTopCard()
