@@ -38,10 +38,12 @@
         }
     }
 
-    // Cuts the deck at the spe
+    // Cuts the deck at the specified index
     public void Cut(int index)
     {
-        //implementation
+        List<Card> temp = _cards.GetRange(0, index + 1);
+        _cards.RemoveRange(0, index + 1);
+        _cards.AddRange(temp);
     }
 }
 
