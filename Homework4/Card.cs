@@ -1,4 +1,25 @@
-﻿public class Card
+﻿/* Joseph Collado
+
+UML
+Class: Cards
+
+Fields:
+- _rank : Rank
+- _suit : Suit
+- _faceUp : bool
+
+Properties:
++ Rank : Rank
++ Suit : Suit
++ FaceUp : bool
+
+Methods:
++ Card(rank: Rank, suit: Suit)
++ FlipOver()
+
+*/
+
+public class Card
 {
     // Fields
     private Rank _rank;

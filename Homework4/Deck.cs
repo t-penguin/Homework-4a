@@ -1,4 +1,23 @@
-﻿public class Deck
+﻿/* Joseph Collado
+
+UML
+Class: Deck
+
+Fields:
+- _cards : List<Card>
+
+Properties:
++ Cards : List<Card>
+
+Methods:
++ Deck()
++ TakeTopCard() : Card
++ Shuffle()
++ Cut(index : int)
+
+*/
+
+public class Deck
 {
     // Fields
     List<Card> _cards = new List<Card>();
